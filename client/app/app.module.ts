@@ -1,3 +1,4 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {routing} from './app.routes';
 import {ListagemComponent} from './listagem/listagem.component';
 import {CadastroComponent} from './cadastro/cadastro.component';
@@ -11,7 +12,7 @@ import 'rxjs/add/operator/map';
 
 @NgModule({
     imports: [
-        BrowserModule, HttpModule, routing, FotoModule, PainelModule
+        BrowserModule, HttpModule, routing, FotoModule, PainelModule, FormsModule, ReactiveFormsModule
     ],
     declarations: [
         AppComponent, CadastroComponent, ListagemComponent
